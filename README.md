@@ -408,6 +408,7 @@ NOVA-E-commerce-App/
 │
 ├── .gitignore
 └── ...
+````
 
 The architecture is designed around reusable components so that functionality can be extended without duplicating large amounts of code.
 
