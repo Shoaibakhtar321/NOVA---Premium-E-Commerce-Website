@@ -415,16 +415,15 @@ The architecture is designed around reusable components so that functionality ca
 
 # 🔑 Core Functionality
 
-| Functionality       | Status | Functionality       | Status | Functionality   | Status |
-| ------------------- | -----: | ------------------- | -----: | --------------- | -----: |
-| Dynamic Products    |      ✅ | Online API          |      ✅ | Categories      |      ✅ |
-| Product Details     |      ✅ | Shopping Cart       |      ✅ | Wishlist        |      ✅ |
-| Quantity Management |      ✅ | Order Flow          |      ✅ | Local Storage   |      ✅ |
-| Redux Toolkit       |      ✅ | React Context       |      ✅ | Dynamic Routing |      ✅ |
-| Skeleton Loading    |      ✅ | Toast Notifications |      ✅ | Responsive UI   |      ✅ |
-| 404 Page            |      ✅ | About Page          |      ✅ | Contact Page    |      ✅ |
-| Premium Footer      |      ✅ | Social Links        |      ✅ |                 |        |
-
+| Functionality         | Status | Functionality        | Status | Functionality      | Status |
+|-----------------------|:------:|----------------------|:------:|--------------------|:------:|
+| Dynamic Products      | ✅     | Online API           | ✅     | Categories         | ✅     |
+| Product Details       | ✅     | Shopping Cart        | ✅     | Wishlist           | ✅     |
+| Quantity Management   | ✅     | Order Flow           | ✅     | Local Storage      | ✅     |
+| Redux Toolkit         | ✅     | React Context        | ✅     | Dynamic Routing    | ✅     |
+| Skeleton Loading      | ✅     | Toast Notifications  | ✅     | Responsive UI      | ✅     |
+| 404 Page              | ✅     | About Page           | ✅     | Contact Page       | ✅     |
+| Premium Footer        | ✅     | Social Links         | ✅     |                    |        |
 ---
 
 # 🚀 Getting Started
@@ -434,7 +433,7 @@ Follow the steps below to run NOVA locally.
 ## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/nova-ecommerce.git
+git clone https://github.com/Shoaibakhtar321/NOVA---Premium-E-Commerce-Website.git
 ```
 
 ## 2. Navigate to the Project
