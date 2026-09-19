@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #f5f5f5 25%, #eeeeee 50%, #f5f5f5 75%);
+  background-size: 1000px 100%;
+  animation: skeleton-shimmer 2s infinite linear;
+}
+
+@keyframes toast-slide-in-right {
+  from {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+[data-sonner-toast] {
+  animation: toast-slide-in-right 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
