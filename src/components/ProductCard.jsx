@@ -42,7 +42,7 @@ const ProductCard = ({ data }) => {
   return (
     <article className="group">
       {/* Image */}
-      <div className="relative aspect-[4/5] overflow-hidden rounded-[28px] bg-[#f5f5f3] shadow-lg">
+      <div className="relative aspect-[4/5] overflow-hidden rounded-[15px] bg-[#f5f5f3] shadow-lg">
         <img
           src={thumbnail}
           alt={title}
@@ -56,7 +56,7 @@ const ProductCard = ({ data }) => {
         {/* Wishlist */}
         <button
           aria-label="Add to wishlist"
-          className={`absolute cursor-pointer left-4 top-4 flex h-11 w-11 items-center justify-center rounded-full ${wishlistItem ? "text-red-500" : "text-neutral-900"} opacity-0 shadow-lg backdrop-blur transition-all duration-300 hover:scale-105 hover:bg-white/95 group-hover:opacity-100`}
+          className={`absolute cursor-pointer left-4 top-4 flex h-11 w-11 items-center justify-center rounded-full ${wishlistItem ? "text-red-500" : "text-neutral-900"} lg:opacity-0 shadow-lg backdrop-blur transition-all duration-300 hover:scale-105 hover:bg-white/95 group-hover:opacity-100`}
           onClick={handleWishlist}
         >
           <Heart
