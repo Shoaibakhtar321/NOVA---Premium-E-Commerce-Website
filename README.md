@@ -12,15 +12,15 @@ The project focuses on **real-world functionality, responsive design, state mana
 
 NOVA includes a complete set of features expected from a modern e-commerce application.
 
-| Feature               | Feature              | Feature                |
-| --------------------- | -------------------- | ---------------------- |
-| 🛒 Shopping Cart      | ❤️ Wishlist          | 📦 Product Details     |
+| Feature                | Feature              | Feature                |
+| ---------------------- | -------------------- | ---------------------- |
+| 🛒 Shopping Cart       | ❤️ Wishlist          | 📦 Product Details     |
 | ➕ Quantity Management | 💾 Local Storage     | 🔔 Toast Notifications |
-| 🔄 API Integration    | 📱 Responsive UI     | 💀 Skeleton Loading    |
-| 🔗 Dynamic Routing    | 📂 Category Browsing | 🛍️ Shop Page          |
-| 📖 About Page         | 📩 Contact Page      | 🦶 Premium Footer      |
+| 🔄 API Integration     | 📱 Responsive UI     | 💀 Skeleton Loading    |
+| 🔗 Dynamic Routing     | 📂 Category Browsing | 🛍️ Shop Page           |
+| 📖 About Page          | 📩 Contact Page      | 🦶 Premium Footer      |
 | ❌ Custom 404 Page     | 🔄 React Context     | 🌐 Social Links        |
-| 📦 Order Placement    | ⚛️ Redux Toolkit     |                        |
+| 📦 Order Placement     | ⚛️ Redux Toolkit     |                        |
 
 ---
 
@@ -228,10 +228,10 @@ Instead of displaying empty spaces while API data is being fetched, NOVA display
 
 This improves:
 
-* Perceived performance
-* User experience
-* Visual consistency
-* Loading feedback
+- Perceived performance
+- User experience
+- Visual consistency
+- Loading feedback
 
 Skeleton loaders are used across different pages and product sections to maintain a polished experience during asynchronous operations.
 
@@ -323,10 +323,10 @@ Beyond the core shopping functionality, NOVA includes supporting pages to make t
 
 | Page          | Purpose                                 | Status |
 | ------------- | --------------------------------------- | ------ |
-| About         | Introduces NOVA and its purpose         | ✅      |
-| Contact       | Provides customer communication options | ✅      |
-| Email Support | Provides customer support functionality | ✅      |
-| 404           | Handles invalid routes                  | ✅      |
+| About         | Introduces NOVA and its purpose         | ✅     |
+| Contact       | Provides customer communication options | ✅     |
+| Email Support | Provides customer support functionality | ✅     |
+| 404           | Handles invalid routes                  | ✅     |
 |               |                                         |        |
 
 ---
@@ -359,7 +359,7 @@ Beyond the core shopping functionality, NOVA includes supporting pages to make t
 
 The project follows a component-based React architecture with separate pages, reusable UI components, context, and Redux state management.
 
-```text
+````text
 NOVA-E-commerce-App/
 │
 ├── public/
@@ -413,17 +413,18 @@ The architecture is designed around reusable components so that functionality ca
 
 ---
 
-# 🔑 Core Functionality
+## 🔑 Core Functionality
 
-| Functionality         | Status | Functionality        | Status | Functionality      | Status |
-|-----------------------|:------:|----------------------|:------:|--------------------|:------:|
-| Dynamic Products      | ✅     | Online API           | ✅     | Categories         | ✅     |
-| Product Details       | ✅     | Shopping Cart        | ✅     | Wishlist           | ✅     |
-| Quantity Management   | ✅     | Order Flow           | ✅     | Local Storage      | ✅     |
-| Redux Toolkit         | ✅     | React Context        | ✅     | Dynamic Routing    | ✅     |
-| Skeleton Loading      | ✅     | Toast Notifications  | ✅     | Responsive UI      | ✅     |
-| 404 Page              | ✅     | About Page           | ✅     | Contact Page       | ✅     |
-| Premium Footer        | ✅     | Social Links         | ✅     |                    |        |
+| Functionality | Status | Functionality | Status | Functionality | Status |
+|---|:---:|---|:---:|---|:---:|
+| Dynamic Products | ✅ | Online API | ✅ | Categories | ✅ |
+| Product Details | ✅ | Shopping Cart | ✅ | Wishlist | ✅ |
+| Quantity Management | ✅ | Order Flow | ✅ | Local Storage | ✅ |
+| Redux Toolkit | ✅ | React Context | ✅ | Dynamic Routing | ✅ |
+| Skeleton Loading | ✅ | Toast Notifications | ✅ | Responsive UI | ✅ |
+| 404 Page | ✅ | About Page | ✅ | Contact Page | ✅ |
+| Premium Footer | ✅ | Social Links | ✅ | — | — |
+
 ---
 
 # 🚀 Getting Started
@@ -434,7 +435,7 @@ Follow the steps below to run NOVA locally.
 
 ```bash
 git clone https://github.com/Shoaibakhtar321/NOVA---Premium-E-Commerce-Website.git
-```
+````
 
 ## 2. Navigate to the Project
 
