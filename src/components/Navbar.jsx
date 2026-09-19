@@ -37,48 +37,6 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden items-center gap-8 lg:flex">
-          {/* <Link
-            to={"/"}
-            onClick={() => setTab("home")}
-            className={`relative py-2 text-sm font-medium tracking-tight transition-colors duration-300 ${
-              tab === "home"
-                ? "text-neutral-950"
-                : "text-neutral-500 hover:text-neutral-950"
-            } after:absolute after:bottom-0 after:left-0 after:h-px after:bg-neutral-950 after:transition-all after:duration-300 ${
-              tab === "home" ? "after:w-full" : "after:w-0 hover:after:w-full"
-            }`}
-          >
-            Home
-          </Link>
-
-          <Link
-            to="/shop"
-            onClick={() => setTab("shop")}
-            className={`relative py-2 text-sm font-medium tracking-tight transition-colors duration-300 ${
-              tab === "shop"
-                ? "text-neutral-950"
-                : "text-neutral-500 hover:text-neutral-950"
-            } after:absolute after:bottom-0 after:left-0 after:h-px after:bg-neutral-950 after:transition-all after:duration-300 ${
-              tab === "shop" ? "after:w-full" : "after:w-0 hover:after:w-full"
-            }`}
-          >
-            Shop
-          </Link>
-          <Link
-            to="/categories"
-            onClick={() => setTab("categories")}
-            className={`relative py-2 text-sm font-medium tracking-tight transition-colors duration-300 ${
-              tab === "categories"
-                ? "text-neutral-950"
-                : "text-neutral-500 hover:text-neutral-950"
-            } after:absolute after:bottom-0 after:left-0 after:h-px after:bg-neutral-950 after:transition-all after:duration-300 ${
-              tab === "categories"
-                ? "after:w-full"
-                : "after:w-0 hover:after:w-full"
-            }`}
-          >
-            Categories
-          </Link> */}
           <nav className="flex items-center gap-6">
             {navItems.map((item) => (
               <NavLink
@@ -156,6 +114,7 @@ const Navbar = () => {
                 key={item.name}
                 to={item.path}
                 className={`rounded-xl px-4 py-3 text-sm font-medium transition hover:bg-neutral-100`}
+                onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
               </Link>
@@ -163,13 +122,24 @@ const Navbar = () => {
           </div>
 
           {/*  */}
-          <Link
-            className="flex items-center justify-center rounded-xl mt-4  border-t border-neutral-100 pt-4 bg-black px-4 text-white flex-1 gap-2  py-3 text-sm font-medium"
-            href={"/cart"}
-          >
-            <ShoppingBag size={18} />
-            View your cart
-          </Link>
+          <div className="flex gap-5 items-center justify-center">
+            <Link
+              className="flex items-center whitespace-nowrap justify-center rounded-xl mt-4  border-t border-neutral-100 pt-4 bg-black px-4 text-white flex-1 gap-2  py-3 text-sm font-medium"
+              to={"/wishlist"}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <Heart size={18} />
+              View your wishlist
+            </Link>
+            <Link
+              className="flex items-center justify-center rounded-xl mt-4  border-t border-neutral-100 pt-4 bg-black px-4 text-white flex-1 gap-2  py-3 text-sm font-medium"
+              to={"/cart"}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <ShoppingBag size={18} />
+              View your cart
+            </Link>
+          </div>
         </div>
       )}
     </header>
