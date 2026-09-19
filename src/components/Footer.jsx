@@ -83,7 +83,6 @@ const Footer = () => {
                   <Link
                     to="/shop"
                     className="transition hover:text-neutral-950"
-                    onClick={() => setTab("shop")}
                   >
                     Shop
                   </Link>
@@ -92,7 +91,6 @@ const Footer = () => {
                   <Link
                     to="/categories"
                     className="transition hover:text-neutral-950"
-                    onClick={() => setTab("categories")}
                   >
                     All categories
                   </Link>

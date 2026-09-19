@@ -202,7 +202,6 @@ const About = () => {
             <Link
               to="/categories"
               className="mt-8 flex w-fit items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-950 transition hover:bg-neutral-200"
-              onClick={() => setTab("categories")}
             >
               Explore our categories
               <ArrowRight size={16} />
@@ -284,7 +283,6 @@ const About = () => {
           </p>
 
           <Link
-            onClick={() => setTab("shop")}
             to="/shop"
             className="mx-auto cursor-pointer active:scale-95 mt-7 flex w-fit items-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-medium text-white transition hover:bg-neutral-800"
           >

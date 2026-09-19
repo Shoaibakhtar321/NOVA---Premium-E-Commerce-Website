@@ -259,7 +259,6 @@ const Contact = () => {
               </div>
 
               <NavLink
-                onClick={() => setTab("categories")}
                 to="/categories"
                 className="text-sm font-medium text-neutral-950"
               >

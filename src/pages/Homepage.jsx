@@ -7,17 +7,19 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import ProductCard from "../components/ProductCard";
-import { useEffect, useMemo, useState } from "react";
+import { useContext, useEffect, useMemo, useState } from "react";
 import { category, getProduct } from "../api/product";
 import { Link } from "react-router-dom";
 import { toast } from "sonner";
 import home from "../assets/hero.png";
 import left_split from "../assets/left-split.png";
+import { NavTab } from "../context/Provider";
 
 const Home = () => {
   const [items, setItems] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [categories, setCategories] = useState([]);
+  const { setTab } = useContext(NavTab);
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     const products = async () => {

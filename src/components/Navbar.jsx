@@ -1,11 +1,16 @@
 import { useContext, useState } from "react";
 import { Search, ShoppingBag, Menu, X, Heart } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { NavTab } from "../context/Provider";
 
 const Navbar = () => {
-  const { tab, setTab } = useContext(NavTab);
+  const navItems = [
+    { name: "Home", path: "/" },
+    { name: "Shop", path: "/shop" },
+    { name: "Categories", path: "/categories" },
+  ];
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const cart = useSelector((state) => state.cartSlice);
   const wishlist = useSelector((state) => state.wishlistSlice);
@@ -32,7 +37,7 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden items-center gap-8 lg:flex">
-          <Link
+          {/* <Link
             to={"/"}
             onClick={() => setTab("home")}
             className={`relative py-2 text-sm font-medium tracking-tight transition-colors duration-300 ${
@@ -73,7 +78,27 @@ const Navbar = () => {
             }`}
           >
             Categories
-          </Link>
+          </Link> */}
+          <nav className="flex items-center gap-6">
+            {navItems.map((item) => (
+              <NavLink
+                key={item.path}
+                to={item.path}
+                className={({ isActive }) =>
+                  `relative py-2 text-sm font-medium tracking-tight transition-colors duration-300 ${
+                    isActive
+                      ? "text-neutral-950"
+                      : "text-neutral-500 hover:text-neutral-950"
+                  }
+                  } after:absolute after:bottom-0 after:left-0 after:h-px after:bg-neutral-950 after:transition-all after:duration-300 ${
+                    isActive ? "after:w-full" : "after:w-0 hover:after:w-full"
+                  }`
+                }
+              >
+                {item.name}
+              </NavLink>
+            ))}
+          </nav>
         </div>
 
         <div className="hidden items-center gap-1 md:flex">
